@@ -1,0 +1,143 @@
+ /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+   
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body::before
+{  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: url('./185936.jpg') repeat;
+  background-size: cover;
+  animation: moveBg 30s linear infinite;
+  z-index: -1;
+  
+}
+ @keyframes moveBg {
+      from { transform: translate(0, 0); }
+      to { transform: translate(-10%, -10%); }
+    }
+  
+/* Chat Container */
+.chat-container {
+  background-color: aliceblue;
+    width:500px;
+    height:600px;
+    border-radius:10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.9);
+
+}
+
+/* Header */
+.chat-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    height:15%;
+   background-color: #4a90e2;
+}
+
+/* Chat Box */
+.chat-box {
+
+  background-color: #3f4249;
+  height: 75%;
+  padding: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width:5px;
+  scrollbar-color: #888 #414448;
+  color:whitesmoke 
+
+
+}
+#hii{
+    font-size: x-large;
+     margin-top:35%;
+     margin-left:25%;
+}
+.topic 
+{  margin:50px;
+  margin-left:100px;
+  color: whitesmoke;
+  font-size: larger;
+  font-weight:500;
+}
+/* Chat Messages */
+.message {
+  padding: 10px 14px;
+  border-radius: 12px;
+   display: inline-block;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+.user {
+    margin-top:10px;
+  background-color: rgb(45, 153, 78);
+}
+
+.bot {
+  background-color: #242423;
+  margin-top:10px;
+}
+
+/* Input Area */
+.chat-input {
+    height:10%;
+   background-color: #4a90e2;
+   border:0px;
+  padding:5px;
+}
+
+.chat-input input {
+
+  width:90%;
+  height:100%;
+   border:0;
+   border-radius:10px;
+   padding-left:10px;
+}
+
+.chat-input button {
+    width:32px;
+    height:100%;
+    border:0px;
+    height:100%;
+    background-color: #4a90e2;
+}
+.firstbox{
+    width:20%;
+    height:100%;
+    border-right:5px solid rgb(116, 103, 103);
+    background: linear-gradient(135deg, #190722, #5b514e);
+    position:absolute;
+    left:0px;
+}
+.dsalogo{
+     display: flex;
+     border-bottom: 2px solid grey;
+     background: linear-gradient(135deg, #755b72, #2a1d75);
+     width:100%;
+     height:30%;
+     justify-content: center;
+     align-items: center;
+     font-size: xx-large;
+     font-weight: bold;
+     color:whitesmoke
+}
+
