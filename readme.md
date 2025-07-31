@@ -8,8 +8,9 @@ A smart web-based chatbot to assist users with **Data Structures and Algorithms 
 
 - [Features](#features)
 - [Tech Stack](#tech-stack)
+- [code of project]
 - [How It Works](#how-it-works)
-- [limitation](#basic limitation)
+- [limitation]
 
 ##  Features
 
@@ -28,6 +29,9 @@ A smart web-based chatbot to assist users with **Data Structures and Algorithms 
 | Frontend   | HTML, CSS, JavaScript |
 | Backend    | LLM API (e.g. OpenAI) |
 | Deployment | GitHub Pages / Netlify |
+
+## code of project
+  [project_repositary](https://github.com/Ritik705/algorithm_assistant)
 
 
 
