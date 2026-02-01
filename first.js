@@ -1,5 +1,5 @@
 const API_KEY = "AIzaSyCbH_mpklt6dA4AOQbA9x4l_4ZrrZpeFO8"; 
-const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
+const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${API_KEY}`;
 
 // The system instruction to define the bot's personality
 const SYSTEM_INSTRUCTION = "You are a DSA teacher. Look at the question and give a respectful answer in bullet point also as well as para explain in short way dont give answer instant the think and every letter appear to write like human write if anyone ask other topic behave rude with it note one thing: answer give only 4 to 5 line by default if user ask for long answer then you give long answer ";
