@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyCbH_mpklt6dA4AOQbA9x4l_4ZrrZpeFO8"; 
+const API_KEY = "AIzaSyDC0fUDUuvvuX9OvcQe33Uy4pR7MgnXAuk"; 
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${API_KEY}`;
 
 // The system instruction to define the bot's personality
@@ -37,7 +37,7 @@ function fun()
         chatbot_reply(input);
       }, 100);
     }
-    //async fun to retrieve inf from api
+    //async fun to retrieve info from api
     async function chatbot_reply(quest)
     {
         const requestBody = {
@@ -58,11 +58,13 @@ function fun()
             body: JSON.stringify(requestBody)
         });
 
-
+     
         const data = await response.json();
+         console.log("bot reply is ",data);
         
         // Extract the text from the response
         const botReply = data.candidates[0].content.parts[0].text;
+        console.log("bot reply is ",botReply);
            appendMessage(botReply, 'bot');
     }
 
