@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyDC0fUDUuvvuX9OvcQe33Uy4pR7MgnXAuk"; 
+const API_KEY = "AIzaSyCNa7T-iy5doVMa9YJpYKaoOGR8JBlRbXg"; 
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${API_KEY}`;
 
 // The system instruction to define the bot's personality
